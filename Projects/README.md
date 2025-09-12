@@ -1,1 +1,1 @@
-[Guide: Installing VS Code and Linking GitHub](installingvscodeandlinkinggithub.md)
+[Project 1. Installing VS Code and Linking GitHub](installingvscodeandlinkinggithub.md)
