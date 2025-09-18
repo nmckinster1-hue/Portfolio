@@ -188,7 +188,151 @@ Successfully establishhed a fully functional documentation environment with vers
             ps aux | grep gnome-keyring
         </td>
         <td style="width:50%;">
-            Checks whether the <pre><code>gnome-keyring</pre></code> process is currently running
+            Checks whether the <code>gnome-keyring</code> process is currently running
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%;">
+            git add
+        </td>
+        <td style="width:50%;">
+            Stage all changes for commit to the repository.
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%;">
+            git commit -m "Initial commit"
+        </td>
+        <td style="width:50%;">
+            Commit staged changes with a message.
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%;">
+            git push origin main
+        </td>
+        <td style="width:50%;">
+            Push commits from local repository to the GitHub repository.
         </td>
     </tr>
 <table>
+
+
+
+## Step-by-Step Walkthrouogh (with Commands)
+1. Download Microsoft GPG key
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded <code>microsoft.asc</code> for package verification.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Verified the file in Downloads:
+
+```
+    bash
+
+    cd Downloads
+    ls
+```
+
+2. Install Microsoft repository package
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded and installed `packages-microsoft-prod.deb`:
+
+```
+    bash
+
+    sudo dpkg -i packages-microsoft-prod.deb
+    sudo apt-get update
+    sudo apt-get install wget gpg
+```
+
+3. Download and install Visual Studio Code
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Installed VS Code from the Debian package:
+
+```
+    bash
+
+    sudo apt install ./code_1_104.0-1757488003_amd64.deb
+```
+
+4. Install VS Code extensions
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Installed GitHub Pull Requeests and Issues, GitHub Codespaces, Markdown Preview Extension Pack
+
+5. Verify Git installation
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Checked if Git was installed:
+
+```
+    bash
+
+    git --version
+```
+
+6. Install Git and configure
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Iinstalled Git and configured username/email:
+
+```
+    bash
+
+    sudo apt install git
+    git config --global user.name "nmckinster1-hue"
+    git config --global user.email "nmckinster1@gmail.com"
+```
+
+7. Attempt GitHub authentication in VS Code
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Checked Gnome Keyring:
+
+```
+    bash
+
+    pa aux | grep gnome-keyring
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Set keyring password to match desktop login via "Passwords and Keyrings" utility for automatic authentication.
+
+8. Verify GitHub repository connectivity
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Created Protfolio folder and linked to GitHub through VS Code.
+
+## Problem & Solution
+
+**Problem:** Could not link and authenticate Visual Studio Code with GitHub.
+
+**Solution**:
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Verified Git installation (`git --version`).
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Installed Giit and configured username/email.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Installed GitHub Pull Requeests and Issues extension.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Confirmed email linked correctly in GitHub.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Verified Gnome Keyring was running (`ps aux | grep gnome-keyring`).
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Set keyring password same as desktop login to allow VS Code to unlock automatically.
+
+## Verification & Testing
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Created Portfolio folder on external hard drive and linked it to GitHub.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Edited filees, committed changes, and synced to verify functionality.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Repeated edits and commits to ensure data integrity.
+
+## Lessons Learned/Best Practices
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Verify system dependencies before installation to prevent errors.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Git and GitHub configuration require careful setupp.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Markdown documentation provides reproducible workflows.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Systematic testing and verification are essential.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Extensions and integrations improve productivity and knowledge sharing.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Authentication system (Gnome Keyring) must be configured to allow secure access.
