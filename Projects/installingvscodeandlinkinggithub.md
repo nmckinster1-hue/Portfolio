@@ -333,6 +333,6 @@ Successfully establishhed a fully functional documentation environment with vers
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Systematic testing and verification are essential.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Extensions and integrations improve productivity and knowledge sharing.
+&nbsp;&nbsp;&nbsp;&nbsp;* Extensions and integrations improve productivity and knowledge sharing.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Authentication system (Gnome Keyring) must be configured to allow secure access.
