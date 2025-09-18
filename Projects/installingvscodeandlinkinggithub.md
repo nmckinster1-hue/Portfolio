@@ -5,12 +5,12 @@
 
 ### Project Goal
 
-&nbsp;&nbsp;&nbsp;&nbsp;The goal of this projectt was to install and configure **Visual Studio Code on Ubuntu** to doocument labs and projects for my portfolio using Markdown.
+&nbsp;&nbsp;&nbsp;&nbsp;The goal of this project was to install and configure **Visual Studio Code on Ubuntu** to document labs and projects for my portfolio using Markdown.
 
 #### Objectives Included:
 &nbsp;&nbsp;&nbsp;&nbsp;* Learning to install and manage applications via the Linux terminal.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Creating professional, well-formatted docuumentation to enhance a technical protfolio.
+&nbsp;&nbsp;&nbsp;&nbsp;* Creating professional, well-formatted documentation to enhance a technical portfolio.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Developing familiarity with Linux file systems and software management in preparation for IT support tasks.
 
@@ -51,7 +51,7 @@ Successfully establishhed a fully functional documentation environment with vers
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Alienware m15 r3 laptop
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Encrypted 2TB Seagatee HDD formatted in ext4
+&nbsp;&nbsp;&nbsp;&nbsp;* Encrypted 2TB Seagate HDD formatted in ext4
 
 ### Software
 
@@ -86,8 +86,6 @@ Successfully establishhed a fully functional documentation environment with vers
 &nbsp;&nbsp;&nbsp;&nbsp;* **GitHub Pull Requests and Issues** - Manage GitHub repositories directly in VS Code.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* **GitHub Codespaces** - Cloud-hosted development environments.
-
-&nbsp;&nbsp;&nbsp;&nbsp;* **GitHub Copilot & Copilot Chat** - AI-assisted coding and inline chat.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* **Markdown Preview Extension Pack** - Markdown preview, formatting support, and special character handling.
 
@@ -124,7 +122,7 @@ Successfully establishhed a fully functional documentation environment with vers
             sudo apt-get-update
         </td>
         <td style="width:50%;">
-            Update the local package list to ensure all repositories and software soureces are current.
+            Update the local package list to ensure all repositories and software sources are current.
         </td>
     </tr>
     <tr>
@@ -219,7 +217,7 @@ Successfully establishhed a fully functional documentation environment with vers
 
 
 
-## Step-by-Step Walkthrouogh (with Commands)
+## Step-by-Step Walkthrough (with Commands)
 1. Download Microsoft GPG key
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded <code>microsoft.asc</code> for package verification.
@@ -271,7 +269,7 @@ Successfully establishhed a fully functional documentation environment with vers
 
 6. Install Git and configure
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Iinstalled Git and configured username/email:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Installed Git and configured username/email:
 
 ```
     bash
@@ -295,7 +293,7 @@ Successfully establishhed a fully functional documentation environment with vers
 
 8. Verify GitHub repository connectivity
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Created Protfolio folder and linked to GitHub through VS Code.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Created Portfolio folder and linked to GitHub through VS Code.
 
 ## Problem & Solution
 
@@ -303,23 +301,23 @@ Successfully establishhed a fully functional documentation environment with vers
 
 **Solution**:
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Verified Git installation (`git --version`).
+&nbsp;&nbsp;&nbsp;&nbsp;1. Verified Git installation.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Installed Giit and configured username/email.
+&nbsp;&nbsp;&nbsp;&nbsp;2. Installed Git and configured username/email.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Installed GitHub Pull Requeests and Issues extension.
+&nbsp;&nbsp;&nbsp;&nbsp;3. Installed GitHub Pull Requeests and Issues extension.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Confirmed email linked correctly in GitHub.
+&nbsp;&nbsp;&nbsp;&nbsp;4. Confirmed email linked correctly in GitHub.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Verified Gnome Keyring was running (`ps aux | grep gnome-keyring`).
+&nbsp;&nbsp;&nbsp;&nbsp;5. Verified Gnome Keyring was running. By doing this deduced there was an issue with granting verification permissions.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Set keyring password same as desktop login to allow VS Code to unlock automatically.
+&nbsp;&nbsp;&nbsp;&nbsp;6. Set keyring password same as desktop login so that the Gnome Keyring will unlock automatically upon desktop login.
 
 ## Verification & Testing
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Created Portfolio folder on external hard drive and linked it to GitHub.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Edited filees, committed changes, and synced to verify functionality.
+&nbsp;&nbsp;&nbsp;&nbsp;* Edited files, committed changes, and synced to verify functionality.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Repeated edits and commits to ensure data integrity.
 
@@ -327,7 +325,7 @@ Successfully establishhed a fully functional documentation environment with vers
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Verify system dependencies before installation to prevent errors.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Git and GitHub configuration require careful setupp.
+&nbsp;&nbsp;&nbsp;&nbsp;* Git and GitHub configuration require careful setup.
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Markdown documentation provides reproducible workflows.
 
