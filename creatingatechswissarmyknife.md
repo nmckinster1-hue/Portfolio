@@ -310,7 +310,7 @@
 
 ## Verification & Testing
 
-![Alt text](20250922_235002.jpg)
+
 
 
 Welcome to my portfolio!
