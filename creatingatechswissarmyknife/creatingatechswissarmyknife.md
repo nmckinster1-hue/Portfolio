@@ -317,7 +317,3 @@
 ![Verify 3](images/20250922_235028.jpg)
 
 ![Verify 4](images/20250922_235038.jpg)
-
-
-Welcome to my portfolio!
-This is where you'll find all of my projects that I have done to show you what I can do and I hope you also see my drive and passion throughout! To see them, click the the projects link above.
