@@ -310,7 +310,13 @@
 
 ## Verification & Testing
 
+![Verify 1](images/20250922_235002.jpg)
 
+![Verify 2](images/20250922_235015.jpg)
+
+![Verify 3](images/20250922_235028.jpg)
+
+![Verify 4](images/20250922_235038.jpg)
 
 
 Welcome to my portfolio!
