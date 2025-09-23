@@ -290,7 +290,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Downloaded the first mirror file for MediCat under direct download mirrors.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Used the file manager to create a folder in the Ventoy drive to extract the MediCat package to and extracted the compressed file to it.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Used the file manager to create a folder in the Ventoy drive to extract the MediCat package to and extracted the compressed folder to it.
 
 ## Problem & Solution
 
@@ -307,6 +307,10 @@
 ```
 
 2. Tested changes by using the built in Linux Disks application for managing and configuring hard drives to format the flash drive to exFAT for best functionality. 
+
+## Verification & Testing
+
+![Alt text](20250922_235002.jpg)
 
 
 Welcome to my portfolio!
