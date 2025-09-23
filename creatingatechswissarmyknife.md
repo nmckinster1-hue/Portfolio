@@ -64,6 +64,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;* File Manager and installed file manager function.
 
+&nbsp;&nbsp;&nbsp;&nbsp;* Linux App Center 
+
 ## Configuration Snippets
 
 ### Linux Terminal Commands
@@ -83,6 +85,14 @@
         </td>
         <td style="width:50%;">
             Navigates to the "Downloads" folder on my home drive
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%;">
+            ls
+        </td>
+        <td style="width:50%;">
+            List files and directories
         </td>
     </tr>
     <tr>
@@ -107,14 +117,6 @@
         </td>
         <td style="width:50%;">
             Installs Ventoy onto my USB and configures it for ISO copying.
-        </td>
-    </tr>
-    <tr>
-        <td style="width:50%;">
-            sudo dpkg -i opera-stable_122.0.5643.17_amd64.deb
-        </td>
-        <td style="width:50%;">
-            Installs the Opera web browser via the downloaded installation link.
         </td>
     </tr>
     <tr>
@@ -151,28 +153,17 @@
     </tr>
     <tr>
         <td style="width:50%;">
-            sudo apt install p7zip-rar
-        </td>
-        <td style="width:50%;">
-            Installs the files necessary to extract data from compressed files.
-        </td>
-    </tr>
-    <tr>
-        <td style="width:50%;">
             sudo apt install file-roller unrar p7zip-full p7zip-rar
         </td>
         <td style="width:50%;">
             Adds GUI support to the files manager for extracting files.
         </td>
     </tr>
-    <tr>
-        <td style="width:50%;">
-
-        </td>
-    </tr>
 </table>
 
 ## URLs
+
+### Operating System ISOs
 
 &nbsp;&nbsp;&nbsp;&nbsp;* [Ventoy download](https://www.ventoy.net/en/download.html)
 
@@ -184,11 +175,138 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;* [Linux Mint Cinnamon download](https://linuxmint.com/edition.php?id=322)
 
-&nbsp;&nbsp;&nbsp;&nbsp;* [RescueZilla backup/recovery tool](https://rescuezilla.com/download)
+### Rescue/Recovery Tools
 
-&nbsp;&nbsp;&nbsp;&nbsp;* [SystemRescue rescue/recovery tool](https://sourceforge.net/projects/systemrescuecd/)
+&nbsp;&nbsp;&nbsp;&nbsp;* [RescueZilla backup/recovery tool download](https://rescuezilla.com/download)
 
-&nbsp;&nbsp;&nbsp;&nbsp;* 
+&nbsp;&nbsp;&nbsp;&nbsp;* [SystemRescue rescue/recovery tool download](https://sourceforge.net/projects/systemrescuecd/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [Hiren's Boot CD download](https://www.hirensbootcd.org/download/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [GParted rescue/recovery tool download](https://sourceforge.net/projects/gparted/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [Clonezilla resuce/recovery tool download](https://sourceforge.net/projects/clonezilla/)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [Ultimate Boot CD rescue/recovery tool download](https://www.ultimatebootcd.com/download.html)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [Opera web browser installtion download](https://www.opera.com/opera)
+
+&nbsp;&nbsp;&nbsp;&nbsp;* [MediCat download](https://medicatusb.com/#google_vignette)
+
+## Step-by-Step Walkthrough
+
+### Setting Up File Extraction
+
+1. Update package list
+
+```
+    bash
+
+    sudo apt update
+```
+
+2. Installed the package to add system and GUI support for extracting files.
+
+```
+    bash
+
+    sudo apt install file-roller unrar p7zip-full p7zip-rar
+```
+
+3. Re-updated package list
+
+```
+    bash
+
+    sudo apt update
+```
+
+### Ventoy Installation
+
+1. Formatted the flash drive
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Deleted excess partitions.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Formatted the flash drive to exFAT for general compatibility.
+
+2. Configured flash drive with Ventoy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Navigated to "downloads" folder on the home drive.
+
+```
+    bash
+
+    cd Downloads
+```
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Extracted the file directory from the Ventoy tar archive file.
+
+```
+    bash
+
+    tar -xvf ventoy-1.1.07-linux.tar.gz
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Navigated to the extracted folder and executed the `.sh` file to the correct block device.
+
+```
+    bash
+
+    lsblk
+    cd Ventoy-1.1.07
+    sudo ./Ventoy2Disk.sh -i /dev/sdx
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Note: Cannot use conventional file extraction methods, because bootloader and disk partitioning processes would by bypassed.**
+
+### Desktop OS Installations
+
+&nbsp;&nbsp;&nbsp;&nbsp;Downloaded the [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO), [Windows 11 ISO](https://www.microsoft.com/en-us/software-download/windows11), [Ubuntu 24.04.3 LTS ISO](https://ubuntu.com/download/desktop), and a mirror of the  [Linux Mint Cinnamon ISO](https://linuxmint.com/edition.php?id=322) to the internal hard drive and copied them over to the Ventoy drive.
+
+### Rescue/Recovery Tools
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [RescueZilla](https://rescuezilla.com/download) tool for disk imaging and cloning, and copied it to the Ventoy drive.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [SystemRescue](https://sourceforge.net/projects/systemrescuecd/) tool, for Linux based system repair, and copied it to the Ventoy drive.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [Hiren's Boot CD](https://www.hirensbootcd.org/download/) tool, for Windows OS repair, and copied it to the Ventoy drive. This is found near the bottom of the page in the file info table.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [GParted](https://sourceforge.net/projects/gparted/) tool, for a fallback if RescueZilla doesn't work, and copied it to the Ventoy drive.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [Clonezilla](https://sourceforge.net/projects/clonezilla/) tool, a lot more robust option to RescueZilla. Extracted the contents from the compressed file archive and copied the contents over to the Ventoy drive.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded the [Ultimate Boot CD](https://www.ultimatebootcd.com/download.html) (UBCD) tool, which is a robust tool for reparing, recovery, diagnostics, and benchmarking, with DOS ultility capability. This cam in the version of a torrent file, which has compatibility issues with firefox, so switching to a web browser like Opera for compatibility is recommended.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Downloaded the Opera web browser from the App Center.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Downloaded "QBittorrent" from the App Center and clicked on the link for the ISO under P2P on the UBCD download page.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Used the QBittorent file manager to download the ISO and copied it to the Ventoy drive.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Downloaded [MediCat](https://medicatusb.com/#google_vignette) tool, which is a massive Windows rescue kit, used for system repair, malware removal, data recovery, disk partitioning, password resetting, and running diagnostics in a Windows envirnment. MediCat is a .7x file so file extraction is required.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Downloaded the first mirror file for MediCat under direct download mirrors.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. Used the file manager to create a folder in the Ventoy drive to extract the MediCat package to and extracted the compressed file to it.
+
+## Problem & Solution
+
+**Problem:** Linux does not natively support exFAT file systems and need to make sure the flash drive is formatted properly.
+
+**Solution:** Needed to figure out how to give Ubuntu the function to read, write, and format exFAT file systems.
+
+1. Installeed exFAT support using the Linux terminal.
+
+```
+    bash
+
+    sudo apt install exfat-fuse exfatprogs
+```
+
+2. Tested changes by using the built in Linux Disks application for managing and configuring hard drives to format the flash drive to exFAT for best functionality. 
 
 
 Welcome to my portfolio!
