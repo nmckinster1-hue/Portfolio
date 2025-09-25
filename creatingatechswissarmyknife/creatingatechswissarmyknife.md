@@ -317,3 +317,9 @@
 ![Verify 3](images/20250922_235028.jpg)
 
 ![Verify 4](images/20250922_235038.jpg)
+
+## Lessons Learned/Best Practices
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Use exFAT for maximum compatibility across Windows and Linux when building multiboot drives.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Keep one or two lighweight recovery ISOs (like GParted) for quick fixes instead of relying on heavy ones like MediCat.
