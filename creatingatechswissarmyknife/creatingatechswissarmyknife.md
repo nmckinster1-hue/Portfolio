@@ -6,6 +6,14 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;To make a single tool that can be used in order to install nearly all commonly used operating systems, as well as a robust toolkit for system repair, data recovery and virus detection and removal.
 
+### Key Skills Demonstrated
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Proficiency in Linux system administration
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Proficiency in cross-platform compatibility using exFAT.
+
+&nbsp;&nbsp;&nbsp;&nbsp;* Ability to create and configure a USB bootloader.
+
 ### Project Outcome
 
 &nbsp;&nbsp;&nbsp;&nbsp;* Successfully configured the USB to hold multiple ISOs and tools for repair, recovery, and benchmarking.
